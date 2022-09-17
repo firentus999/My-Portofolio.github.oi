@@ -17,7 +17,9 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
+
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
@@ -46,7 +48,7 @@
                     <div class="col-lg-8 align-self-baseline">
                         <p class="text-white-75 mb-1">Hey nama saya firentus agustone pasaribu saya seorang Developer. </p>
                         <p class="text-white-75 mb-3">Saya memiliki keahlian dibeberapa bidang bahasa pemograman diantaranya PHP (Hypertext Preprocessor), CSS, JavaScript, Html dan saya memiliki keahlian dalam bidang perbaikan komputer baik software ataupun hardware. </p>
-                        <img src="assets/img/profil.jpeg" class="rounded-circle" style="width: 90px;margin-bottom: 30px; height: 90px"><br>
+                        <img src="assets/img/profil.png" class="rounded-circle" style="width: 90px;margin-bottom: 30px; height: 90px"><br>
                         <a class="btn btn-primary btn-xl" href="#portfolio">Find Out More</a>
                     </div>
                 </div>
@@ -55,10 +57,14 @@
     
         <!-- Portfolio-->
         <div id="portfolio">
-            <h4 class="text-center font-weight-bold bg-light">* My Project *</h4>
+        <div class="card">
+          <div class="card-header bg-success text-white">
+            <h4 class="text-center font-weight-bold">*My Project*</h4>
+          </div>
+          <div class="card-body">
             <div class="container-fluid p-0">
                 <div class="row g-0">
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-4 col-sm-6 border border-dark">
                         <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.png" title="Aplikasi Barcode Edmi" >
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.png" alt="..." style="height: 400px; width: 500px"/>
                             <div class="portfolio-box-caption">
@@ -68,7 +74,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-4 col-sm-6 border border-dark">
                         <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.png" title="Sistem Pendukung Keputusan">
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.png" alt="..." style="height: 400px; width: 500px"/>
                             <div class="portfolio-box-caption">
@@ -78,7 +84,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-4 col-sm-6 border border-dark">
                         <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.png" title="Aplikasi Elearning Mahasiswa UPB">
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.png" alt="..." style="height: 400px; width: 500px"/>
                             <div class="portfolio-box-caption">
@@ -88,7 +94,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-4 col-sm-6 border border-dark">
                         <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.png" title="Aplikasi GBI Makorem">
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.png" alt="..." style="height: 400px; width: 500px"/>
                             <div class="portfolio-box-caption">
@@ -98,7 +104,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-4 col-sm-6 border border-dark">
                         <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.png" title="Aplikasi My Pertamin">
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.png" alt="..."style="height: 400px; width: 500px"/>
                             <div class="portfolio-box-caption">
@@ -108,7 +114,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-4 col-sm-6 border border-dark">
                         <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.png" title="Aplikasi Kaceot Peduli">
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.png" alt="..."style="height: 400px; width: 500px"/>
                             <div class="portfolio-box-caption p-3">
@@ -121,6 +127,9 @@
                 </div>
             </div>
         </div>
+          </div>
+        </div>
+            
         <!-- Contact-->
         <section class="page-section" id="contact">
             <div class="container px-4 px-lg-5">
@@ -129,7 +138,7 @@
                         <h2 class="mt-0">My Contact!</h2>
                         <hr class="divider" />
                      <div class="row">
-                         <div class="col-md-4" style="margin-left: -10px;">
+                         <div class="col-md-4" style="margin-left: -10px;" id="wa">
                              <img class="img" src="assets/img/wa.png" alt="..."style="height: 70px; width: 70px"/><br>
                              <p style="margin-left: -20px;">085212147937</p>
                          </div>
@@ -150,6 +159,7 @@
         <footer class="bg-light py-5">
             <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - Firentus</div></div>
         </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
         <!-- SimpleLightbox plugin JS-->
@@ -160,6 +170,5 @@
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
